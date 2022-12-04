@@ -96,3 +96,10 @@ h1, h2, h3{
 .social-media-links li a:hover{
     opacity: 0.9;
 }
+
+/* Media quieres (compatibility za drugi ustroistva) */
+@media(min-width: 768px){
+    .header-content h1{
+        font-size: 7rem;
+    }
+}
