@@ -163,6 +163,7 @@ h3 {
 #work .title h2::after {
   background: var(--light-color);
 }
+
 .work-bottom {
   margin-top: 4rem;
   text-align: center;
@@ -174,6 +175,13 @@ h3 {
 .newIcons {
   opacity: 0.5;
   filter: invert(100%);
+}
+
+.portfolio-grid > div {
+  transform: var(--transition);
+}
+.portfolio-grid > div:hover {
+  transform: scale(0.9);
 }
 
 /* Media quieres (compatibility za drugi ustroistva) */
@@ -191,6 +199,9 @@ h3 {
   }
   .work-bottom {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
