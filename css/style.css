@@ -183,7 +183,47 @@ h3 {
 .portfolio-grid > div:hover {
   transform: scale(0.9);
 }
-
+#contact {
+  background-color: rgb(248, 248, 248);
+}
+.contact-content {
+  flex-direction: column;
+  align-items: stretch;
+}
+.contact-left {
+  margin-bottom: 5rem;
+}
+.contact-left .lead {
+  padding: 0.5rem;
+}
+.contact-left form {
+  margin-top: 3rem;
+}
+.contact-left form .form-control {
+  display: block;
+  margin: 1.6rem 0;
+  border: 2px solid rgba(0, 0 0, 0.3);
+  padding: 1rem;
+  width: 100%;
+}
+.contact-left form .form-control::placeholder {
+  font-size: 15px;
+  font-family: "Serif" sans-serif;
+}
+.contact-left .btn-submit {
+  padding: 1.4rem 3rem;
+  font-family: "Serif" sans-serif;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  margin: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+  transition: var(--transition);
+}
+.contact-left .btn-submit:hover {
+  background-color: #000;
+}
 /* Media quieres (compatibility za drugi ustroistva) */
 @media (min-width: 450px) {
   .work-bottom {
@@ -203,18 +243,31 @@ h3 {
   .portfolio-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-}
+  .contact-left form .form-control {
+    max-width: 500px;
+  }
 
-@media (min-width: 768px) {
-  .header-content h1 {
-    font-size: 7rem;
-  }
-  .about-content {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 6rem;
-    row-gap: 0;
-  }
-  .about-left {
-    margin-bottom: 0;
+  @media (min-width: 768px) {
+    .header-content h1 {
+      font-size: 7rem;
+    }
+    .about-content {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 6rem;
+      row-gap: 0;
+    }
+    .about-left {
+      margin-bottom: 0;
+    }
+    .contact-content {
+      flex-direction: row;
+    }
+    .contact-right {
+      padding-left: 3rem;
+      width: 50%;
+    }
+    .contact-left {
+      width: 50%;
+    }
   }
 }
