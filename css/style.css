@@ -15,6 +15,9 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
+img {
+  transition: transform 0.5s ease; /* Other styles for the image */
+}
 body {
   font-size: 1.6rem;
   font-family: "Serif";
@@ -180,7 +183,7 @@ h3 {
 .portfolio-grid > div {
   transform: var(--transition);
 }
-.portfolio-grid > div:hover {
+.portfolio-grid > div img:hover {
   transform: scale(0.9);
 }
 #contact {
