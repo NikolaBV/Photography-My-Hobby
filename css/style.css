@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap");
-
 :root {
   --transition: all 300ms ease-in-out;
   --dark-color: #332e29;
@@ -16,11 +15,11 @@ html {
   scroll-behavior: smooth;
 }
 img {
-  transition: transform 0.5s ease; /* Other styles for the image */
+  transition: transform 0.5s ease;
 }
 body {
   font-size: 1.6rem;
-  font-family: "Serif";
+  font-family: serif;
   line-height: 1.6;
 }
 button,
@@ -227,6 +226,44 @@ h3 {
 .contact-left .btn-submit:hover {
   background-color: #000;
 }
+
+#footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+.footer-content {
+  text-align: center;
+}
+.footer-content h3 {
+  text-align: center;
+  color: var(--light-color);
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+.footer-content ul {
+  flex-direction: column;
+}
+.footer-content ul li a {
+  color: var(--light-color);
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+.footer-content ul li a:hover {
+  opacity: 0.7;
+}
+.footer-content ul li {
+  margin: 0.5rem 1rem;
+}
+.footer-content > div:first-child {
+  margin-bottom: 3rem;
+}
+.footer-content > div:first-child div {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin: 5rem auto;
+  border-radius: 50%;
+}
 /* Media quieres (compatibility za drugi ustroistva) */
 @media (min-width: 450px) {
   .work-bottom {
@@ -249,28 +286,30 @@ h3 {
   .contact-left form .form-control {
     max-width: 500px;
   }
-
-  @media (min-width: 768px) {
-    .header-content h1 {
-      font-size: 7rem;
-    }
-    .about-content {
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 6rem;
-      row-gap: 0;
-    }
-    .about-left {
-      margin-bottom: 0;
-    }
-    .contact-content {
-      flex-direction: row;
-    }
-    .contact-right {
-      padding-left: 3rem;
-      width: 50%;
-    }
-    .contact-left {
-      width: 50%;
-    }
+  .footer-content ul {
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  .header-content h1 {
+    font-size: 7rem;
+  }
+  .about-content {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6rem;
+    row-gap: 0;
+  }
+  .about-left {
+    margin-bottom: 0;
+  }
+  .contact-content {
+    flex-direction: row;
+  }
+  .contact-right {
+    padding-left: 3rem;
+    width: 50%;
+  }
+  .contact-left {
+    width: 50%;
   }
 }
