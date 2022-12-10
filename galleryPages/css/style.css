@@ -1,1 +1,30 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sans-serif", sans-serif;
+}
+#header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2.5rem 1.25rem 0 1.25rem;
+}
+.header-content .title {
+  width: 100%;
+  padding-bottom: 50px;
+}
+.header-content .title h3 {
+  font-size: 3rem;
+  padding-bottom: 10px;
+  font-weight: bolder;
+  border-bottom: 3px solid #222;
+}
+.container .images-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
