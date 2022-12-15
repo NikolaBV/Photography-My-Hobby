@@ -67,8 +67,8 @@ body {
 .mainDiv .navbar a:hover {
   opacity: 0.8;
 }
-@media screen (min-width: 576px) {
+@media only screen and (max-width: 600px) {
   .mainDiv h1 {
-    font-size: 0.5rem;
+    font-size: 3rem;
   }
 }
