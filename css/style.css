@@ -201,6 +201,8 @@ h3 {
 .contact-left form {
   margin-top: 3rem;
 }
+.form-contact {
+}
 .contact-left form .form-control {
   display: block;
   margin: 1.6rem 0;
